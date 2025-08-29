@@ -7,6 +7,12 @@
     <list default="true" id="2cc13854-848a-4768-9f33-5925418e6306" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/insights/event/[slug]/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/insights/event/[slug]/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemIntro/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemIntro/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemIntro/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemIntro/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemOutro/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemOutro/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemOutro/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemOutro/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/workItem/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/workItem/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/workItem/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/workItem/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +82,7 @@
       <workItem from="1756374951524" duration="170000" />
       <workItem from="1756375685251" duration="3776000" />
       <workItem from="1756392543410" duration="3413000" />
-      <workItem from="1756433952628" duration="927000" />
+      <workItem from="1756433952628" duration="3664000" />
     </task>
     <servers />
   </component>

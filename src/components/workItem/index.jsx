@@ -84,7 +84,16 @@ export default function WorkItem() {
             <section className={styles.workItemMain} ref={workItemMainRef}>
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
-                        <Image src="/images/city.jpg" alt="journey" fill priority />
+                        <Image
+                            src="/images/city.jpg"
+                            alt="journey"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="100vw"
+                            unoptimized={true}
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                     <div className={styles.workItemName}>
                         <h1>Building Trust</h1>
@@ -93,7 +102,16 @@ export default function WorkItem() {
 
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
-                        <Image src="/images/beach.jpg" alt="carbon edge landing" fill priority />
+                        <Image
+                            src="/images/beach.jpg"
+                            alt="carbon edge landing"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="100vw"
+                            unoptimized={true}
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                     <div className={styles.workItemName}>
                         <h1 className={styles.beach}>Lasting Value</h1>
@@ -102,7 +120,16 @@ export default function WorkItem() {
 
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
-                        <Image src="/images/us.jpg" alt="carbon edge us" fill priority />
+                        <Image
+                            src="/images/us.jpg"
+                            alt="carbon edge us"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="100vw"
+                            unoptimized={true}
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                     <div className={styles.workItemName}>
                         <h1>Driving growth</h1>
@@ -111,7 +138,16 @@ export default function WorkItem() {
 
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
-                        <Image src="/images/bridge.jpg" alt="Bridge" fill priority />
+                        <Image
+                            src="/images/bridge.jpg"
+                            alt="Bridge"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="100vw"
+                            unoptimized={true}
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                     <div className={styles.workItemName}>
                         <h1>Guiding Success</h1>
@@ -120,7 +156,16 @@ export default function WorkItem() {
 
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
-                        <Image src="/images/canvas.jpg" alt="Fort" fill priority />
+                        <Image
+                            src="/images/canvas.jpg"
+                            alt="Fort"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="100vw"
+                            unoptimized={true}
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
                     <div className={styles.workItemName}>
                         <h1>Fortifying Compliance</h1>
