@@ -29,7 +29,6 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
     const tl = useRef(null);
-    const headColour = useRef(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -43,36 +42,7 @@ export default function Header() {
 
     useGSAP(
         () => {
-            const Colors = [
-                "#222326",
-                "#23272E",
-                "#2B2F3A",
-                "#191919",
-                "#253040",
-                "#232930",
-                "#282828",
-                "#1D2747",
-                "#321A28",
-                "#1C2421",
-                "#3A2C40",
-                "#1B3A45",
-                "#222029",
-            ];
 
-            function animateColor() {
-                const color =
-                    Colors[
-                        Math.floor(Math.random() * Colors.length)
-                        ];
-                gsap.to(headColour.current, {
-                    duration: 8,
-                    color: color,
-                    ease: "power2.inOut",
-                    onComplete: animateColor,
-                });
-            }
-
-            animateColor();
 
             gsap.set(".menuLinkItemHolder", {
                 y: 75,
@@ -146,7 +116,7 @@ export default function Header() {
                     <Link href="/" className={styles.brand}>
                         <div className={styles.logoText}>
                             <h1>
-                                <span className={styles.headText} ref={headColour}>
+                                <span className={styles.headText}>
                                     Joshi Payal
                                 </span>{" "}
                                 <br/>
@@ -156,7 +126,7 @@ export default function Header() {
                             <span className={styles.ca}>Chartered Accountants</span>
                         </div>
                     </Link>
-                    
+
                     <nav className={styles.desktopNav}>
                         <div className={styles.dropdown}>
                             <div className={styles.navItem}>
