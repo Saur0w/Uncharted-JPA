@@ -1,0 +1,84 @@
+$bg: #151515;
+$text: #ffffff;
+$muted: #999;
+$border: rgba(255, 255, 255, 0.1);
+$highlight: #ffffff;
+$accent: #464a67;
+
+.services {
+  padding: 6rem 1.5rem;
+  background: $bg;
+  color: $text;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .body {
+    margin-top: 100px;
+
+
+    .heading {
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 4rem;
+      line-height: 1.2;
+      color: $highlight;
+    }
+
+    .filters {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    .serviceList {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1100px;
+      border-top: 1px solid $border;
+
+      .serviceItem {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        align-items: center;
+        padding: 2rem 0;
+        border-bottom: 1px solid $border;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+          row-gap: 0.8rem;
+          align-items: start;
+          padding: 1.5rem 0;
+        }
+
+        .serviceTitle {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $highlight;
+        }
+
+        .serviceDescription {
+          color: $muted;
+          font-size: 0.95rem;
+        }
+
+        .serviceMeta {
+          text-align: right;
+          color: $muted;
+
+          @media (max-width: 768px) {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+}

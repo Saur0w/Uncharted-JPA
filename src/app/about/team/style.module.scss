@@ -1,0 +1,266 @@
+.container {
+  max-width: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 200px 20px 80px;
+  background-color: #151515;
+  color: #f5f5f5;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #aaaaaa;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.heroImage {
+  margin: 60px auto;
+  max-width: 1000px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #dddddd;
+  font-weight: 300;
+  padding: 0 20px;
+
+  p {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.teamMembers {
+  margin: 80px 0;
+  padding: 0 20px;
+}
+
+.membersTitle {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.membersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.memberCard {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 8px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(40, 40, 40, 0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.memberImage {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.memberName {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+}
+
+.meta {
+  margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: #777777;
+  text-align: center;
+  font-style: italic;
+}
+
+.header {
+  .titlePlaceholder {
+    height: 3.5rem;
+    width: 300px;
+    margin: 0 auto 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+
+  .subtitlePlaceholder {
+    height: 1.5rem;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+}
+
+.heroImagePlaceholder {
+  height: 400px;
+  max-width: 1000px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.contentPlaceholder {
+  height: 10rem;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.memberCardSkeleton {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 8px;
+  padding: 30px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.memberImagePlaceholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0 auto 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.memberNamePlaceholder {
+  height: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 150px 20px 60px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .membersGrid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 200px 15px 40px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .membersGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+  }
+
+  .memberImage {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .membersGrid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}

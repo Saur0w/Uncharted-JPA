@@ -1,0 +1,94 @@
+.insightsPage {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  color: white;
+  padding: 250px 2rem 2rem;
+
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #f8f8f8, #d7d4d4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .card {
+    background: #252525;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      border-color: #555;
+
+      .cta {
+        color: #4dabf7;
+      }
+    }
+
+    .cardContent {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #f8f9fa;
+      }
+
+      p {
+        color: #adb5bd;
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+      }
+
+      .cta {
+        color: #74c0fc;
+        font-weight: 500;
+        transition: color 0.2s;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 250px;
+
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .gridContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}

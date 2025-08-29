@@ -1,0 +1,129 @@
+$bg: #151515;
+$text: #f1f1f1;
+$muted: #aaa;
+$highlight: #ffffff;
+$card-bg: #1e1e1e;
+$card-hover-bg: #2a2a2a;
+
+.aboutSection {
+  padding: 8rem 1.5rem;
+  background: $bg;
+  color: $text;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+
+  .body {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .index {
+      font-style: italic;
+      font-size: 3rem;
+      color: $highlight;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+
+      @media (max-width: 480px) {
+        font-size: 2rem;
+      }
+    }
+
+    h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .item {
+      background: $card-bg;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: left;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: $card-hover-bg;
+        border-color: $highlight;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .number {
+        font-size: 0.85rem;
+        color: $muted;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #333;
+        margin: 0.7rem 0 1.2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: $highlight;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $muted;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 6rem 1rem;
+
+    .body {
+      .grid {
+        gap: 1.5rem;
+      }
+
+      h2 {
+        margin-bottom: 3rem;
+      }
+
+      .item {
+        padding: 1.5rem;
+
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .body {
+      .item {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

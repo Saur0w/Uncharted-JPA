@@ -1,0 +1,292 @@
+
+$primary-color: #2563eb;
+$text-dark: #1f2937;
+$text-light: #6b7280;
+$text-muted: #9ca3af;
+$border-color: #e5e7eb;
+$bg-light: #f9fafb;
+$white: #ffffff;
+$shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+$border-radius: 0.75rem;
+$transition: all 0.3s ease;
+
+@mixin card-hover {
+  transition: $transition;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-hover;
+
+    .eventTitle {
+      color: $primary-color;
+    }
+
+    .cardImg {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 768px) { @content; }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+}
+
+.eventPage {
+  min-height: 100vh;
+  background-color: $bg-light;
+  padding: 150px 0 2rem;
+
+  @include responsive(mobile) {
+    padding: 150px 0 1rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include responsive(mobile) {
+    padding: 0 1rem;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $text-dark;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @include responsive(mobile) {
+      font-size: 2.25rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $text-light;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @include responsive(mobile) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.noEvents {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: $white;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+
+  p {
+    font-size: 1.125rem;
+    color: $text-light;
+    margin: 0;
+  }
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+
+  @include responsive(mobile) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.eventCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  @include card-hover;
+
+  // Remove outline on mouse click, keep it for keyboard navigation
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+.eventCard {
+  background: $white;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+  border: 1px solid $border-color;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .eventImage {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    .cardImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition;
+    }
+  }
+
+  .eventContent {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .eventTitle {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: $text-dark;
+      transition: $transition;
+
+      @include responsive(mobile) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .eventSubtitle {
+      color: $text-light;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0 0 1rem 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .eventMeta {
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      color: $text-muted;
+      margin-top: auto;
+
+      .dateLocation {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-bottom: 0.5rem;
+
+        @include responsive(mobile) {
+          gap: 0.125rem;
+        }
+
+        .eventDate,
+        .location {
+          font-weight: 500;
+        }
+      }
+
+      .organizer {
+        font-style: italic;
+      }
+    }
+
+    .price {
+      margin-bottom: 1rem;
+
+      .priceTag {
+        display: inline-block;
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+
+      .category {
+        display: inline-block;
+        background: $primary-color;
+        color: $white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    .registrationBadge {
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+      padding: 0.5rem 1rem;
+      border-radius: $border-radius;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: 1.125rem;
+  color: $text-light;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.eventCardLink {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+.eventCardLink:focus {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}
+
+.eventCardLink:active {
+  transform: translateY(-2px) scale(0.98);
+}
