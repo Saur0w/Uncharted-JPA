@@ -35,14 +35,14 @@ export default function AboutPage() {
 
                 <div className={styles.contentFirst}>
                     <div className={styles.aboutPara}>
-                        
+                        <Text>
                             <p className={styles.para}>
                                 At the heart of our firm is a commitment to understanding your unique business. <br />
                                 We go beyond compliance — offering strategic insights, proactive planning, and financial clarity
                                 that drives long-term value. <br />Whether you&#39;re scaling a startup or managing a legacy enterprise,
                                 we provide personalized solutions that help you navigate change, manage risk, and seize opportunity.
                             </p>
-                        
+                        </Text>
                     </div>
 
                     <div className={styles.imageContainer}>

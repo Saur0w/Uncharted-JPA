@@ -46,8 +46,14 @@ export default function ServicesSection() {
             description: "Improve operations and manage risks through regular and systematic internal audits tailored to your business.",
         },
         {
-            id: "certifications",
+            id: "statutory-audit",
             number: "06",
+            title: "Statutory Audit",
+            description: "Independent financial statement examination ensuring regulatory compliance and transparency.",
+        },
+        {
+            id: "certifications",
+            number: "07",
             title: "Certifications",
             description: "Assistance in obtaining financial, statutory, and regulatory certifications required by various authorities.",
         }

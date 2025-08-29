@@ -39,39 +39,31 @@ export default function CompanyLawPage() {
                         </div>
 
                         <div className={styles.ourExpertise}>
-                            <Text>
                                 <h2>Our Expertise</h2>
                                 <p>
                                     Our team of qualified Company Secretaries, corporate lawyers, and compliance specialists brings decades of combined experience in corporate law and governance. We&#39;ve successfully guided startups through their incorporation journey, helped SMEs navigate complex compliance requirements, and assisted listed companies with sophisticated governance challenges. Our expertise spans across all company types—private limited, public limited, OPCs, and LLPs—ensuring tailored solutions for every business structure.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.methodology}>
-                            <Text>
                                 <h2>Our Methodology</h2>
                                 <p>
                                     We commence with a comprehensive compliance health check, identifying current status and potential risk areas. Our structured approach includes creating customized compliance calendars, implementing digital documentation systems, and establishing regular monitoring protocols. We provide quarterly compliance reviews, proactive regulatory updates, and hands-on support for all filings and documentation. Our digital-first methodology ensures audit-ready documentation and seamless compliance tracking.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.whyUs}>
-                            <Text>
                                 <h2>Why Choose Us</h2>
                                 <p>
                                     We transform compliance from a regulatory burden into a strategic advantage. Our proactive approach anticipates regulatory changes, prevents compliance gaps, and ensures your company maintains an impeccable legal standing. With dedicated compliance managers, real-time support, and a proven track record of zero penalty assessments, we provide peace of mind that allows you to focus on core business growth while we handle the complex world of corporate compliance.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.contact}>
-                            <Text>
                                 <h2>Get Started</h2>
                                 <p>
                                     Ready to ensure bulletproof corporate compliance? <a href="/contact" className={styles.ctaLink}>Connect with our Company Law experts</a> today for a comprehensive compliance assessment and strategic roadmap.
                                 </p>
-                            </Text>
                         </div>
                     </div>
                 </div>

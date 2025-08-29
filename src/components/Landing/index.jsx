@@ -7,9 +7,6 @@ export default function Landing() {
     return (
         <section className={styles.landing}>
             <div className={styles.container}>
-                <div className={styles.scrollText}>
-                    <p>scroll</p>
-                </div>
                 <div className={styles.mainHeading}>
                     <Text>
                         <h1>

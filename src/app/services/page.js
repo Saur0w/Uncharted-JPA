@@ -39,6 +39,12 @@ export default function Services() {
             id: "internal-audit"
         },
         {
+            title: "Statutory Audit",
+            category: "Audit",
+            description: "Independent financial statement examination ensuring regulatory compliance and transparency.",
+            id: "statutory-audit"
+        },
+        {
             title: "Certifications",
             category: "Advisory",
             description: "Professional certifications, attestations, and various statutory certificates.",

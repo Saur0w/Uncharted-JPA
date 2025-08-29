@@ -14,6 +14,7 @@ export default function Header() {
             {path: "/services/fema", label: "FEMA (Foreign Exchange Management Act)"},
             {path: "/services/msme-compliance", label: "MSME Compliance"},
             {path: "/services/internal-audit", label: "Internal Audit"},
+            {path: "/services/statutory-audit", label: "Statutory Audit"},
             {path: "/services/certifications", label: "Certifications"},
         ],
         about: [{path: "/about/team", label: "Our Team"}],
@@ -83,7 +84,6 @@ export default function Header() {
                 opacity: 0,
             });
 
-            // Create timeline
             tl.current = gsap
                 .timeline({paused: true})
                 .to(".menuOverlay", {
@@ -103,7 +103,6 @@ export default function Header() {
         {scope: container}
     );
 
-    // Handle menu open/close
     useEffect(() => {
         if (tl.current) {
             if (isMenuOpen) {
@@ -147,18 +146,17 @@ export default function Header() {
                     <Link href="/" className={styles.brand}>
                         <div className={styles.logoText}>
                             <h1>
-                <span className={styles.headText} ref={headColour}>
-                  Joshi Payal
-                </span>{" "}
+                                <span className={styles.headText} ref={headColour}>
+                                    Joshi Payal
+                                </span>{" "}
                                 <br/>
-                                <span className={styles.amp}>&</span>
+                                <span className={styles.amp}>& </span>
                                 <span className={styles.otherOne}>Associates</span>
                             </h1>
                             <span className={styles.ca}>Chartered Accountants</span>
                         </div>
                     </Link>
-
-                    {/* Desktop Navigation */}
+                    
                     <nav className={styles.desktopNav}>
                         <div className={styles.dropdown}>
                             <div className={styles.navItem}>

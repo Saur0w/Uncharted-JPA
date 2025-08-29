@@ -60,6 +60,7 @@ $card-bg: rgba(255, 255, 255, 0.03);
       width: clamp(280px, 50vw, 400px);
       height: clamp(350px, 60vw, 500px);
       position: relative;
+      margin-top: -100px;
       
       .aboutImage {
         width: 100%;

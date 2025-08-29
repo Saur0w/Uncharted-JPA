@@ -39,39 +39,31 @@ export default function InternalAuditPage() {
                         </div>
 
                         <div className={styles.ourExpertise}>
-                            <Text>
                                 <h2>Our Expertise</h2>
                                 <p>
                                     Our internal audit team comprises certified internal auditors, chartered accountants, IT specialists, and industry experts with extensive experience across manufacturing, services, financial institutions, and non-profit organizations. We combine technical audit expertise with deep business acumen to deliver insights that drive operational excellence. Our team&#39;s diverse background ensures comprehensive audit coverage, from financial controls to operational processes, compliance frameworks to technology systems.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.methodology}>
-                            <Text>
                                 <h2>Our Methodology</h2>
                                 <p>
                                     Our structured methodology begins with understanding your business environment, risk profile, and strategic objectives. We develop customized audit programs using risk-based sampling, advanced data analytics, and process mapping techniques. Our approach includes continuous monitoring systems, stakeholder interviews, control testing, and comprehensive documentation. We deliver actionable insights through detailed reports, executive dashboards, and implementation roadmaps, ensuring sustainable improvements and measurable outcomes.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.whyUs}>
-                            <Text>
                                 <h2>Why Choose Us</h2>
                                 <p>
                                     We&#39;re strategic business partners, not just auditors. Our value-driven approach focuses on enhancing business performance while ensuring regulatory compliance. We provide real-time insights, practical recommendations, and hands-on implementation support. Our audits don&#39;t just identify problems—they deliver solutions that strengthen your organization&#39;s resilience, improve operational efficiency, and create sustainable competitive advantages. With us, internal audit becomes a catalyst for business transformation.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.contact}>
-                            <Text>
                                 <h2>Get Started</h2>
                                 <p>
                                     Ready to transform your internal audit into a strategic advantage? <a href="/contact" className={styles.ctaLink}>Partner with our audit experts</a> today and discover how comprehensive internal audit can drive your business forward.
                                 </p>
-                            </Text>
                         </div>
                     </div>
                 </div>

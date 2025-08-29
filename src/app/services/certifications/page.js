@@ -39,39 +39,31 @@ export default function CertificationPage() {
                         </div>
 
                         <div className={styles.ourExpertise}>
-                            <Text>
                                 <h2>Our Expertise</h2>
                                 <p>
                                     Our certification team comprises qualified Chartered Accountants, financial analysts, and compliance experts with extensive experience across industries and certification types. We&#39;ve issued thousands of certificates for diverse purposes including loan applications, foreign remittances, government tenders, startup funding, merger transactions, and regulatory submissions. Our expertise ensures every certificate meets the highest professional standards and specific requirements of the intended recipient institution.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.methodology}>
-                            <Text>
                                 <h2>Our Methodology</h2>
                                 <p>
                                     Our systematic approach begins with understanding the specific certification requirements and intended use. We conduct thorough document verification, financial analysis, and compliance assessment based on the certificate type. Our process includes detailed working paper preparation, multiple quality checks, and format alignment with recipient requirements. We maintain comprehensive audit trails and supporting documentation, ensuring complete transparency and professional integrity in every certification issued.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.whyUs}>
-                            <Text>
                                 <h2>Why Choose Us</h2>
                                 <p>
                                     We combine professional excellence with practical business understanding. Our certifications carry the credibility of experienced professionals and the reliability of systematic processes. We understand the urgency of business opportunities and provide flexible, fast-track services without compromising accuracy. Our track record includes zero rejections from financial institutions and regulatory bodies, ensuring your certifications open doors rather than create delays in your business journey.
                                 </p>
-                            </Text>
                         </div>
 
                         <div className={styles.contact}>
-                            <Text>
                                 <h2>Get Started</h2>
                                 <p>
                                     Need professional certifications that open business opportunities? <a href="/contact" className={styles.ctaLink}>Connect with our certification experts</a> today for fast, reliable, and professionally sound attestation services.
                                 </p>
-                            </Text>
                         </div>
                     </div>
                 </div>
