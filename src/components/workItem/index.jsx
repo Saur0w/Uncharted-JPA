@@ -139,7 +139,7 @@ export default function WorkItem() {
                 <section className={styles.workItem}>
                     <div className={styles.workItemImg}>
                         <Image
-                            src="/images/bridge.jpg"
+                            src="/images/far.jpg"
                             alt="Bridge"
                             fill
                             priority

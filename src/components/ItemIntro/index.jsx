@@ -19,22 +19,20 @@ export default function ItemIntro() {
         gsap.fromTo(
             textRef.current,
             {
-                y: isMobile ? 300 : 500,      // Much further below
-                scale: 0.2,                   // Much smaller starting size
-                opacity: 0,                   // Completely invisible
-                transformOrigin: "center center"
+                y: isMobile ? 150 : 250,     // More conservative values
+                scale: 0.7,                  // Less extreme scale
+                opacity: 0.3,               // Start with some opacity
             },
             {
-                y: 0,                         // Normal position
-                scale: isMobile ? 1 : 1.1,    // Final size (slightly bigger on desktop)
-                opacity: 1,                   // Fully visible
-                ease: "power2.out",           // Smoother ease
+                y: 0,
+                scale: 1,                   // Normal final scale
+                opacity: 1,
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%",         // Start earlier for more dramatic effect
-                    end: "center center",     // End when section center hits viewport center
-                    scrub: 1.5,              // Smoother scrub
-                    // markers: true,         // Uncomment for debugging
+                    start: "top 70%",       // Start later
+                    end: "center 60%",      // End earlier
+                    scrub: 1,               // Faster scrub
                 }
             }
         );
